@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rishabh Shah</title>
+
 </head>
 <body>
-    <h1>hi</h1>
+    <h1 id="hello"></h1>
+
+    <script>
+        const hello = ["Hello", "Hola", "Bonjour", "Hej", "Ciao", "Konnichiwa", "Hallo", "Namaste"];
+        const chose = hello[Math.floor(Math.random() * hello.length)] // Math.random() returns number in [0, 1)
+
+        document.getElementById("hello").innerHTML = chose;
+    </script>
 </body>
 </html>
